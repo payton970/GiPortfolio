@@ -1,0 +1,162 @@
+/* Reset some default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background-color: #111;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#about div {
+  flex: 1;
+  min-width: 250px;
+}
+
+#about h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Skills Section */
+#skills {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Projects Section */
+#projects {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+#projects h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.project-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact {
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+#contact p {
+  margin-bottom: 0.5rem;
+}
+
+.socials a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+  #about img {
+    margin-bottom: 1rem;
+  }
+}
